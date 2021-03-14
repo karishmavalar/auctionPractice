@@ -11,4 +11,6 @@ class Auctions(models.Model):
     ends_on = models.DateTimeField()
     featured_image = models.ImageField(upload_to='featured image')
     enable = models.BooleanField(default=True)
+    auction_description = models.TextField()
+    auction_image = models.ImageField(upload_to='auction image')
 	
