@@ -3,5 +3,6 @@ from .views import *
 
 
 urlpatterns = [
+    url(r'^index/$', AuctionList.as_view(), name='auctions_list'),
     
 ]
